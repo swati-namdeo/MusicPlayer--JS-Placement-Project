@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+
+body {
+  background-color: #474747   ;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  font-family: 'Poppins', sans-serif;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  height: 100px;
+  background-color: #363636 ;
+  font-weight: 300;
+}
+
+nav ul li {
+  padding: 0 12px;
+}
+nav ul li h2 i {
+  margin-right: 20px;
+}
+nav ul li input {
+  caret-color: #E8175D;
+  color: #b1b1b1;
+}
+.brand video {
+  width: 100px;
+  padding: 0 8px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  font-weight: bolder;
+  font-size: 1.3rem;
+}
+.logo-name{
+  color: #E8175D;
+  font-size: 24px;
+  text-align: center;
+}
+
+.link a {
+  color:  #b1b1b1   ;
+  /* background-color: black; */
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 10px 30px;
+  line-height: 80px;
+  transition: 0.5s;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.link a:hover {
+  border-radius: 20%;
+  color: #E8175D
+}
+
+#rangeBar {
+  width: 98%;
+  height: 2px;
+  cursor: pointer;
+}
+.songbar {
+  padding: 1rem;
+  background-color: #363636;
+  width: 100%;
+  z-index: 2;
+  margin: auto;
+  position: fixed;
+  bottom: 1rem;
+}
+#masterSongBar {
+  align-items: center;
+  margin: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mid_btn {
+  display: inline-flex;
+  align-items: center;
+}
+
+.mid_btn i {
+  padding: 0 5px;
+  color: #E8175D;
+  cursor: pointer;
+  margin: 0 4px;
+}
+
+.queue {
+  background-color: white;
+}
+
+#id {
+  background-color: white;
+}
+
+.songInfo {
+  display: flex;
+  align-items: center;
+  padding: 0px 20px;
+  margin: 5px 0;
+}
+
+#masterSongName {
+  margin: 0 10px;
+  color: #E8175D;
+  font-family: 'Poppins', sans-serif;
+  font-size: 35px;
+  text-transform: uppercase;
+}
+
+.songName {
+  cursor: pointer;
+}
+
+
+#Queue,
+.addtoqueue {
+  background-color: transparent;
+  border: none;
+  color: #E8175D;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 0 15px;
+}
+
+#Queue:hover,
+.addtoqueue:hover {
+  background-color: #E8175D;
+  color: #363636;
+}
+
+
+.queuedSong {
+  cursor: pointer;
+}
+
+.cont_nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#music_list {
+  display: flex;
+  flex-direction: column;
+  background-color: #363636 ;
+  width: 50%;
+  min-width: 30%;
+  position: relative;
+  margin: 20px auto;
+  border-radius: 20px;
+  height: 70vh;
+  
+
+  max-height: 470px;
+  overflow-y: scroll;
+  /* width: 50%; */
+  padding: 1rem;
+}
+#music_list::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+
+#music_list::-moz-scrollbar {
+  width: 0;
+  background: transparent;
+}
+
+#music_list {
+  -ms-overflow-style: none;
+}
+
+
+
+.musicListDiv
+{
+  /* border: 2px #F6C3E5 solid; */
+  padding: 4px 1rem;
+  color: rgb(235, 227, 227, .8);
+  font-weight: 250;
+  font-family: 'Poppins', sans-serif;
+  padding-right: 30px;
+
+}
+.musicListDiv:hover{
+  background-color: #E8175D;
+  color: #363636; 
+  cursor: pointer;  
+}
+.rightbtn i {
+  color: #E8175D;
+}
+.rightbtn button {
+  background-color: transparent;
+  color: #E8175D;
+}
+
+
+.shuffleon {
+  color: green;
+}
+.section-side {
+  display: flex;
+  flex-grow: 1;
+}
+.section-side #music_list #structure {
+  
+}
+.current-time,
+.total-duration,
+#masterSongName {
+  font-size: 16px;
+  font-weight: bold;
+  color: #E8175D;
+}
+
+
+#qd,
+#sd{
+  display: flex;
+  flex-direction: column;
+  font-family: 'Poppins', sans-serif;
+  border-radius: 10px;
+  margin: 20px auto;
+  text-align: center;
+  /* padding: 10px; */
+  background-color: #363636;
+  color: rgb(235, 227, 227, .8);
+  height: 50%;
+  width: 20%;
+}
+#qd h3:hover h5,
+#sd h3:hover h5{
+  color: #E8175D;
+}
+
+#searchsong{
+  background-color: transparent;
+  width: 350px;
+  height: 15px;
+  font-size: medium;
+  font-weight: solid;
+  padding: 1rem;
+  border-radius: 4px;
+  border-color: #A8A7A7;
+  outline: none;
+}
+
+#searchsong:hover{
+border-radius: 8px;     
+}
